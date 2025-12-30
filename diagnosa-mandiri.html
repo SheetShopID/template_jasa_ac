@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosa Mandiri - ProFix AC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="detail-header" id="mainHeader">
+        <div class="back-button" onclick="history.back()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+        </div>
+        <h1 id="headerTitle">Diagnosa Mandiri</h1>
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+    </header>
+
+    <!-- Added search header that appears when user types -->
+    <div class="search-header" id="searchHeader">
+        <div class="search-header-container">
+            <div class="back-button" onclick="closeSearch()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </div>
+            <div class="search-header-box">
+                <svg class="search-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" id="searchHeaderInput" placeholder='AC tidak dingin...' />
+            </div>
+        </div>
+        <!-- Autocomplete dropdown -->
+        <div class="autocomplete-dropdown" id="autocompleteDropdown"></div>
+    </div>
+
+    <!-- Hero Section with Search -->
+    <section class="diagnosa-hero" id="diagnosaHero">
+        <h2>Apa Masalah AC Anda?</h2>
+        <p>Pilih gejala yang dialami untuk mengetahui penyebab, solusi, dan estimasi biaya.</p>
+        
+        <div class="search-box">
+            <svg class="search-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <!-- Added onfocus event to trigger search animation -->
+            <input type="text" id="searchInput" placeholder='"AC tidak dingin...' onfocus="activateSearch()" />
+            <button class="search-button">Search</button>
+        </div>
+    </section>
+
+    <!-- Problems Grid -->
+    <section class="problems-grid-section" id="problemsGrid">
+        <div class="problems-grid">
+            <!-- AC Tidak Dingin -->
+            <!-- <a href="detail-masalah.html" class="problem-grid-card"> -->
+                <!-- <div class="problem-icon-wrapper icon-blue-light"> -->
+                    <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> -->
+                        <!-- <path d="M12 2v20M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path> -->
+                    <!-- </svg> -->
+                <!-- </div> -->
+                <!-- <h3>AC Tidak Dingin</h3> -->
+                <!-- <p>Angin keluar normal tapi ruangan tetap panas.</p> -->
+                <!-- <button class="solution-button">Lihat Solusi</button> -->
+            <!-- </a> -->
+			<a href="detail-masalah.html" class="problem-grid-card">
+				<div class="problem-image">
+					<img src="https://asset.kompas.com/crops/f6VODq72lWqceBiGD1Z9ptMRD4U=/48x51:972x667/1200x800/data/photo/2021/06/24/60d4495e1c3f5.jpg" alt="AC Tidak Dingin">
+				</div>
+
+				<div class="problem-content">
+					<h3>AC Tidak Dingin</h3>
+					<p>Angin keluar normal tapi ruangan tetap panas.</p>
+					<button class="solution-button">Lihat Solusi</button>
+				</div>
+			</a>
+			
+			<a href="detail-masalah.html" class="problem-grid-card">
+				<div class="problem-image">
+					<img src="https://imgcdn.espos.id/@espos/images/2023/02/ilustrasi-ac-rumah.jpg?quality=60" alt="AC Bocor">
+				</div>
+				<div class="problem-content">
+					<h3>AC Bocor</h3>
+					<p>Air menetes dari unit indoor membahasi lantai.</p>
+					<button class="solution-button">Lihat Solusi</button>
+				</div>
+			</a>
+ 
+ 			<a href="detail-masalah.html" class="problem-grid-card">
+				<div class="problem-image">
+					<img src="https://blog-asset.jakartanotebook.com/2023/09/white-air-conditioning-stream-fr.webp" alt="AC Bocor">
+				</div>
+				<div class="problem-content">
+					<h3>Bunyi Berisik</h3>
+					<p>Suara kasar, dengung, atau getaran tidak wajar.</p>
+					<button class="solution-button">Lihat Solusi</button>
+				</div>
+			</a>
+ 
+ 			<a href="detail-masalah.html" class="problem-grid-card">
+				<div class="problem-image">
+					<img src="https://static.retailworldvn.com/News/0/BerapasuhuACpalingdingin-845x442.png" alt="AC Bocor">
+				</div>
+				<div class="problem-content">
+					<h3>Mati Sendiri</h3>
+					<p>AC tiba-tiba off atau lampu indikator berkedip.</p>
+					<button class="solution-button">Lihat Solusi</button>
+				</div>
+			</a>
+			 
+			<a href="detail-masalah.html" class="problem-grid-card">
+				<div class="problem-image">
+					<img src="https://aquaelektronik.com/upload_files/1/9fbecbde8f-ac-bau-tidak-sedap.png" alt="AC Bocor">
+				</div>
+				<div class="problem-content">
+					<h3>Bau Tak Sedap</h3>
+					<p>Keluar bau apek, asam, atau gosong.</p>
+					<button class="solution-button">Lihat Solusi</button>
+				</div>
+			</a> 
+
+			<a href="detail-masalah.html" class="problem-grid-card">
+				<div class="problem-image">
+					<img src="https://imgcdn.espos.id/@espos/images/2023/02/ilustrasi-ac-rumah.jpg?quality=60" alt="AC Bocor">
+				</div>
+				<div class="problem-content">
+					<h3>Panas Siang Hari</h3>
+					<p>Malam dingin, tapi tidak terasa saat siang terik.</p>
+					<button class="solution-button">Lihat Solusi</button>
+				</div>
+			</a>
+			
+        </div>
+    </section>
+
+    <!-- Other Problems Section -->
+    <section class="other-problems-section">
+        <div class="other-problems-box">
+            <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4m0-4h.01"></path>
+            </svg>
+            <h3>Masalah Lainnya?</h3>
+        </div>
+        <p class="tanya-teknisi">Tanya Teknisi</p>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Beranda</span>
+        </a>
+        <a href="diagnosa-mandiri.html" class="nav-item active">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4m0-4h.01" stroke="white" fill="none" stroke-width="2"></path>
+            </svg>
+            <span>Masalah</span>
+        </a>
+        <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span>Jasa Kami</span>
+        </a>
+        <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4m0-4h.01"></path>
+            </svg>
+            <span>Tentang</span>
+        </a>
+    </nav>
+
+    <!-- WhatsApp FAB -->
+    <div class="whatsapp-fab" onclick="openWhatsApp()">
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
