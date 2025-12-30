@@ -1404,6 +1404,20 @@ body {
   }
 }
 
+.service-icon-wrapper {
+  width: 2.25rem;        /* ±36px */
+  height: 2.25rem;
+  border-radius: 0.5rem; /* lebih subtle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;    /* icon ikut mengecil */
+  background: #f0f9ff;
+  color: #0070f3;
+  flex-shrink: 0;        /* icon tidak gepeng */
+}
+
+
 /* ===== MOBILE SMALL (iPhone SE / 375px) ===== */
 @media (max-width: 430px) {
 
