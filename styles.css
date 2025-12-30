@@ -1306,6 +1306,12 @@ body {
   flex-direction: column;
   gap: 0.6rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;	
+}
+
+.service-footer{
+	margin:1rem;
 }
 
 .service-card:hover {
