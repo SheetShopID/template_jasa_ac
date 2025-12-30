@@ -12,6 +12,11 @@ body {
   padding-bottom: 80px;
 }
 
+.headtitle{
+	padding:0.6rem 0 0 1rem;
+	font-size: 0.8rem;
+}
+
 /* Header Styles */
 .header {
   background: white;
@@ -71,8 +76,8 @@ body {
   background: #0070f3;
   color: white;
   border: none;
-  padding: 16px 40px;
-  font-size: 18px;
+  padding: 0.9rem 2rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 12px;
   cursor: pointer;
@@ -81,6 +86,7 @@ body {
   gap: 8px;
   box-shadow: 0 4px 16px rgba(0, 112, 243, 0.3);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-button:hover {
@@ -91,7 +97,7 @@ body {
 
 /* Problems Section */
 .problems-section {
-  padding: 40px 20px;
+  padding: 1rem 1rem;
   background: #F6FBFF;
 }
 
@@ -236,7 +242,7 @@ body {
 
 /* Why Choose Section */
 .why-choose-section {
-  padding: 40px 20px;
+  padding: 1rem 1rem;
   background: #F6FBFF;
 }
 
@@ -366,7 +372,7 @@ body {
 }
 
 .detail-header h1 {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
   color: #1a1a1a;
 }
@@ -434,7 +440,7 @@ body {
 .content-section {
   background: white;
   padding: 13px 20px;
-  margin: 20px;
+  margin: 1rem;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -449,8 +455,8 @@ body {
 .cause-item {
   display: flex;
   gap: 16px;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.7rem;
   border-bottom: 1px solid #f3f4f6;
 }
 
@@ -473,14 +479,14 @@ body {
 }
 
 .cause-content h4 {
-  font-size: 16px;
+  font-size: 0.7rem;
   font-weight: 600;
   margin-bottom: 6px;
   color: #1a1a1a;
 }
 
 .cause-content p {
-  font-size: 14px;
+  font-size: 0.7rem;
   color: #6b7280;
   line-height: 1.5;
 }
@@ -488,7 +494,7 @@ body {
 .solution-item {
   display: flex;
   gap: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 0.3rem;
 }
 
 .solution-number {
@@ -506,7 +512,7 @@ body {
 }
 
 .solution-content p {
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #374151;
   line-height: 1.6;
 }
@@ -644,8 +650,8 @@ body {
 
 .price-summary {
   background: white;
-  padding: 1px 20px;
-  margin: 0 20px 20px;
+  padding: 0.1rem 1rem;
+  margin: 0 1rem 0.1rem;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -661,7 +667,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 16px 0;
+  padding: 0.7rem 0.8rem;
   border-bottom: 1px solid #f3f4f6;
 }
 
@@ -670,20 +676,20 @@ body {
 }
 
 .item-info h4 {
-  font-size: 16px;
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 4px;
   color: #1a1a1a;
 }
 
 .item-info p {
-  font-size: 13px;
+  font-size: 0.7rem;
   color: #6b7280;
   line-height: 1.5;
 }
 
 .item-price {
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #374151;
   white-space: nowrap;
@@ -1071,7 +1077,7 @@ body {
 }
 
 .problems-grid-section {
-  padding: 32px 20px;
+  padding: 0.8rem 1rem;
   background: #F6FBFF;
 }
 
@@ -1194,9 +1200,9 @@ body {
   background: #fef3c7;
   color: #92400e;
   border: none;
-  padding: 10px 16px;
+  padding: 0.3rem 1rem;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
@@ -1276,170 +1282,313 @@ body {
 /* ===== MOBILE SMALL (iPhone SE / 375px) ===== */
 @media (max-width: 430px) {
 
-  body {
-    font-size: 14px;
-  }
+/* ======================================================
+   ROOT & RESET
+====================================================== */
+:root {
+  font-size: 16px;
+}
 
-  /* HEADER */
-  .header {
-    padding: 12px 16px;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .logo {
-    font-size: 20px;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #F6FBFF;
+  padding-bottom: 5rem;
+}
 
-  /* HERO */
-  .hero {
-    padding: 40px 16px;
-  }
+/* ======================================================
+   HEADER
+====================================================== */
+.header,
+.detail-header {
+  background: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,.05);
+}
 
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0070f3;
+}
+
+.notification-icon,
+.search-icon,
+.back-button {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ======================================================
+   HERO
+====================================================== */
+.hero,
+.diagnosa-hero {
+  padding: 1rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+.hero h1,
+.diagnosa-hero h2 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 0.9rem;
+}
+
+.hero p,
+.diagnosa-hero p {
+  font-size: 0.95rem;
+  max-width: 32rem;
+  margin: 0 auto 1rem;
+  color: #374151;
+}
+
+.cta-button {
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  background: #0070f3;
+  color: #fff;
+  border: none;
+}
+
+/* ======================================================
+   SECTION GENERIC
+====================================================== */
+section {
+  padding: 1rem 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.view-all {
+  font-size: 0.9rem;
+}
+
+/* ======================================================
+   CAROUSEL
+====================================================== */
+.carousel-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.problem-card {
+  flex: 0 0 75%;
+  max-width: 18rem;
+  background: #fff;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  scroll-snap-align: start;
+}
+
+.problem-card h3 {
+  font-size: 1rem;
+}
+
+.problem-card p {
+  font-size: 0.85rem;
+}
+
+/* ======================================================
+   GRID PROBLEMS
+====================================================== */
+.problems-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.problem-grid-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.problem-image {
+  width: 100%;
+  height: 4rem;
+}
+
+.problem-content {
+  padding: 0.5rem;
+}
+
+.problem-grid-card h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.problem-grid-card p {
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+/* ======================================================
+   FEATURES
+====================================================== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.feature-card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.feature-card h3 {
+  font-size: 0.9rem;
+}
+
+.feature-card p {
+  font-size: 0.8rem;
+}
+
+/* ======================================================
+   DETAIL PAGE
+====================================================== */
+.detail-hero {
+  padding: 1rem;
+  background: linear-gradient(83deg, #fff, #e2eeff);
+  border-radius: 0 0 2rem 2rem;
+}
+
+.detail-hero h2 {
+  font-size: 0.9rem;
+}
+
+.detail-hero p {
+  font-size: 0.75rem;
+}
+
+.content-section {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.content-section h3 {
+  font-size: 1.2rem;
+}
+
+/* ======================================================
+   PRICING
+====================================================== */
+.pricing-section {
+  margin: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  background: #E8F2FF;
+}
+
+.price-range {
+  font-size: 1.75rem;
+}
+
+/* ======================================================
+   FAQ
+====================================================== */
+.faq-section {
+  margin: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.faq-item h4 {
+  font-size: 0.95rem;
+}
+
+.faq-item p {
+  font-size: 0.85rem;
+}
+
+/* ======================================================
+   SEARCH & AUTOCOMPLETE
+====================================================== */
+.search-box,
+.search-header-box {
+  padding: 0.40rem 1rem;
+  border-radius: 0.75rem;
+}
+
+.search-box input,
+.search-header-box input {
+  font-size: 0.9rem;
+}
+
+.autocomplete-item {
+  padding: 1rem;
+}
+
+.autocomplete-text h4 {
+  font-size: 0.9rem;
+}
+
+.autocomplete-text p {
+  font-size: 0.8rem;
+}
+
+/* ======================================================
+   BOTTOM NAV
+====================================================== */
+.bottom-nav {
+  padding: 0.5rem 0;
+}
+
+.nav-item {
+  font-size: 0.7rem;
+}
+
+/* ======================================================
+   FLOATING WHATSAPP
+====================================================== */
+.whatsapp-fab {
+  width: 3.25rem;
+  height: 3.25rem;
+  bottom: 4.5rem;
+  right: 1rem;
+}
+
+/* ======================================================
+   RESPONSIVE ≥ 640px
+====================================================== */
+@media (min-width: 640px) {
   .hero h1 {
-    font-size: 24px;
+    font-size: 2.2rem;
   }
 
-  .hero p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-
-  .cta-button {
-    font-size: 15px;
-    padding: 14px 28px;
-    border-radius: 10px;
-  }
-
-  /* SECTION */
-  .problems-section,
-  .why-choose-section,
-  .problems-grid-section {
-    padding: 24px 16px;
-  }
-
-  .section-header h2 {
-    font-size: 18px;
-  }
-
-  /* CARD CAROUSEL */
-  .problem-card {
-    flex: 0 0 240px;
-    padding: 18px;
-  }
-
-  .problem-card h3 {
-    font-size: 15px;
-  }
-
-  .problem-card p {
-    font-size: 13px;
-  }
-
-  /* GRID PROBLEM */
-  .problems-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .problem-image {
-    height: 90px;
-  }
-
-  .problem-content {
-    padding: 14px;
-  }
-
-  /* FEATURE */
   .features-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .feature-card {
-    padding: 18px;
-  }
-
-  .feature-card h3 {
-    font-size: 15px;
-  }
-
-  .feature-card p {
-    font-size: 12px;
-  }
-
-  /* DETAIL PAGE */
-  .detail-hero {
-    padding: 14px;
-    border-radius: 0 0 24px 24px;
-  }
-
-  .detail-hero h2 {
-    font-size: 17px;
-  }
-
-  .detail-hero p {
-    font-size: 13px;
-  }
-
-  .content-section {
-    margin: 16px;
-    padding: 14px 16px;
-  }
-
-  .content-section h3 {
-    font-size: 18px;
-  }
-
-  /* PRICING */
-  .pricing-section {
-    margin: 16px;
-    padding: 24px 16px;
-  }
-
-  .price-range {
-    font-size: 26px;
-  }
-
-  .pricing-label {
-    font-size: 16px;
-  }
-
-  /* INCLUDED */
-  .included-grid {
-    grid-template-columns: 1fr;
-    padding: 0 16px;
-  }
-
-  .included-item {
-    padding: 10px;
-    font-size: 13px;
-  }
-
-  /* FAQ */
-  .faq-section {
-    margin: 0 16px 16px;
-    padding: 24px 16px;
-  }
-
-  /* CTA */
-  .cta-section {
-    padding: 0 16px 100px;
-  }
-
-  .whatsapp-button-primary {
-    font-size: 16px;
-    padding: 16px;
-  }
-
-  /* FLOATING BUTTON */
-  .whatsapp-fab {
-    width: 52px;
-    height: 52px;
-    bottom: 85px;
-    right: 16px;
-  }
-
-  .whatsapp-fab svg {
-    width: 28px;
-    height: 28px;
+  .problems-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+}
