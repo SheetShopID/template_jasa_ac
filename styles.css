@@ -1279,17 +1279,17 @@ body {
    INTRO
 ================================ */
 .service-intro {
-    padding: 20px 16px 12px;
+    padding: 1.25rem 1rem 0.75rem;
 }
 
 .service-intro h2 {
-    font-size: 22px;
+    font-size: 1.375rem;        /* ~22px */
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 .service-intro p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6b7280;
 }
 
@@ -1297,25 +1297,25 @@ body {
    SERVICE LIST
 ================================ */
 .service-list-section {
-    padding: 0 16px 90px;
+    padding: 0 1rem 5.5rem;
 }
 
 .service-card {
     display: flex;
-    gap: 14px;
+    gap: 0.875rem;
     background: #ffffff;
-    border-radius: 16px;
-    padding: 16px;
-    margin-top: 16px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.04);
 }
 
 .service-icon-wrapper {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1323,8 +1323,8 @@ body {
 }
 
 .service-icon-wrapper svg {
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 /* icon colors (sesuai gambar) */
@@ -1334,26 +1334,27 @@ body {
 .icon-green { background: #dcfce7; color: #166534; }
 
 .service-content h3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .service-content p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6b7280;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .service-price-badge {
     display: inline-block;
     background: #e0edff;
     color: #2563eb;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 999px;
+    padding: 0.375em 0.75em;
+    border-radius: 999em;
 }
+
 
 /* ===============================
    CARD FOOTER
@@ -1362,43 +1363,39 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px 0;
-    font-size: 13px;
+    padding: 0.5rem 0.75rem 0;
+    font-size: 0.8125rem;
     color: #6b7280;
 }
 
 .detail-link {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25em;
     color: #2563eb;
     font-weight: 600;
     text-decoration: none;
-}
-
-.detail-link svg {
-    margin-top: 1px;
 }
 
 /* ===============================
    GUARANTEE
 ================================ */
 .guarantee-banner {
-    margin: 24px 16px;
-    padding: 16px;
-    border-radius: 14px;
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    border-radius: 0.875rem;
     background: #eff6ff;
     text-align: center;
 }
 
 .guarantee-banner h3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .guarantee-banner p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #374151;
 }
 
@@ -1410,50 +1407,46 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 64px;
+    height: 4rem;
     background: #ffffff;
-    border-top: 1px solid #e5e7eb;
+    border-top: 0.0625rem solid #e5e7eb;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .nav-item {
-    text-decoration: none;
+    font-size: 0.75rem;
     color: #6b7280;
-    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-}
-
-.nav-item.active {
-    color: #2563eb;
+    gap: 0.25rem;
 }
 
 .nav-icon {
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
 }
+
 
 /* ===============================
    WHATSAPP FAB
 ================================ */
 .whatsapp-fab {
     position: fixed;
-    bottom: 84px;
-    right: 16px;
-    width: 56px;
-    height: 56px;
+    bottom: 5.25rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     background: #25d366;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-    cursor: pointer;
+    box-shadow: 0 0.375rem 1rem rgba(0,0,0,0.2);
 }
+
 
 .whatsapp-fab svg {
     width: 28px;
